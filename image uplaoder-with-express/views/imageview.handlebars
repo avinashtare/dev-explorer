@@ -1,0 +1,38 @@
+<style>
+    .cursor-zoom-in {
+        cursor: zoom-in;
+    }
+
+    .cursor-zoom-out {
+        cursor: zoom-out;
+    }
+    .zoom{
+        scale: 2;
+    }
+    img{
+        transition: 0.5s ease;
+    }
+</style>
+
+<div class="main">
+    <div class="container w-100 h-100 d-flex align-items-center justify-content-center my-1 overflow-y-scroll">
+        <img class="cursor-zoom-in w-100" id="myImg" src="/images/{{filename}}" alt="{{alt}}">
+    </div>
+</div>
+
+<script>
+    const myImg = document.getElementById("myImg")
+
+    myImg.addEventListener("click", () => {
+        if (myImg.classList.contains("cursor-zoom-in")) {
+            myImg.classList.remove("cursor-zoom-in");
+            myImg.classList.add("cursor-zoom-out");
+            myImg.classList.add("zoom");
+        }
+        else {
+            myImg.classList.remove("cursor-zoom-out");
+            myImg.classList.add("cursor-zoom-in");
+            myImg.classList.remove("zoom");
+        }
+    })
+</script>
