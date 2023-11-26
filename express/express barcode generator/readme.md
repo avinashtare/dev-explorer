@@ -1,4 +1,4 @@
 # start 
-js```
+```
 npm start
 ```
