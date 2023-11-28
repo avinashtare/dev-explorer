@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.products,
+.loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.products .product {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 2px;
+}
+
+.products .product img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.products .product button {
+    padding: 6px 12px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+.products .product-loading {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 2px;
+}
+
+.products .product-loading .img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #aeaeae;
+}
+
+.products .product-loading .title {
+    width: 100%;
+    height: 20px;
+    background-color: #aeaeae;
+    margin-top: 15px;
+}
+
+.products .product-loading .des {
+    width: 100%;
+    height: 30px;
+    background-color: #aeaeae;
+    margin-top: 10px;
+}
+
+.products .product-loading .button {
+    width: 80px;
+    height: 30px;
+    background-color: #aeaeae;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.product .product-loading,
+.button,
+.des,
+.title,
+.img {
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        background: linear-gradient(to right, rgb(46, 46, 46), rgb(180, 180, 180));
+
+    }
+
+    50% {
+        background: linear-gradient(to right, rgb(144, 144, 144rgb(238, 238, 238)25));
+    }
+
+    100% {
+        background: linear-gradient(to right, rgb(46, 46, 46), rgb(180, 180, 180));
+    }
+}
