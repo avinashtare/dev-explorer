@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    padding: 40px 45px;
+    width: 450px;
+    height: 510px;
+}
+
+.form .logo,
+.primaryText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form .primaryText .mainText {
+    font-size: 1.7em;
+    padding: 20px 0 10px 0;
+}
+
+.form .inputs {
+    margin-top: 25px;
+}
+
+.form .inputs .emailSec {
+    position: relative;
+}
+
+.form .inputs .emailSec span {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    background: white;
+    padding: 0 10px;
+    color: rgb(145, 145, 145);
+    z-index: -1;
+    font-weight: 400;
+    transition: 0.2s ease-in;
+}
+
+.form .inputs .emailSec .active {
+    font-size: 12px;
+    top: -8px;
+    left: 14px;
+    z-index: 1;
+}
+
+.form .inputs .emailSec input {
+    width: 100%;
+    padding: 13px 26px;
+    font-size: 1.1em;
+    border: 0;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    outline: none;
+    z-index: 1;
+    background: transparent;
+}
+
+.form .inputs input:focus {
+    border: 1px solid #1a73e8;
+}
+
+.form .inputs a {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.form .secondryText {
+    margin-top: 45px;
+}
+
+.form .secondryText span {
+    font-size: 14px;
+    color: #86878a;
+}
+
+.form .secondryText a {
+    text-decoration: none;
+    margin-top: 5px;
+    display: block;
+}
+
+.form .actions {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form .actions button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1a73e8;
+    padding: 6px 6px;
+    font-size: 1.01em;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.form .actions button:hover {
+    background-color: #d3ddff6d;
+}
+
+.form .actions button:nth-child(2) {
+    background-color: #1a73e8;
+    color: #f1f1f1;
+    padding: 10px 25px;
+}
