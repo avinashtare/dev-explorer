@@ -1,0 +1,87 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  overflow-y: scroll;
+}
+
+.box {
+  width: 100%;
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .box .pass-gen {
+  border: 1px solid red;
+} */
+
+.box .pass-gen h1 {
+  color: #d8d8d8;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.box .pass-gen .pass-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .pass-gen .pass-box input,
+button {
+  border: 0;
+  padding: 8px 16px;
+  font-weight: 400;
+}
+
+.box .pass-gen .pass-box input {
+  outline: none;
+  width: 350px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 20px 0;
+  border: 0;
+}
+
+.box .pass-gen .pass-box button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #1a60c2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box .pass-gen .btn-pass-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .pass-gen .btn-pass-sec .btn-pass {
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-weight: 600;
+  background-color: #1a60c2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box .pass-gen .range-box {
+  background-color: red;
+}
+
+.box .pass-gen label {
+  color: #fff;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .pass-gen .d-box {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: center;
+}
