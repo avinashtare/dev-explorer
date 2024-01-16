@@ -5,6 +5,8 @@ import os
 PORT = 8000
 VIDEO_PATH = 'test.mp4'
 CHUNK_SIZE = 10**6  # Adjust the chunk size as needed (1000000 Bytes)->(1 MB)  
+# CHUNK_IN_MB = 2
+# CHUNK_SIZE = int(CHUNK_IN_MB*(1024*1024))  # Adjust the chunk size as needed (1000000 Bytes)->(1 MB)  
 
 class CustomRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
