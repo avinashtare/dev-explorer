@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Housie Game</title>
+</head>
+
+<body>
+    <h1 class="housie-text">Housie Game</h1>
+    <div class="modal">
+        <span>1</span>
+    </div>
+    <div class="board">
+        <script>
+            for (let i = 0; i < 90; i++) {
+                document.write(`<div class="board-box"><span>${i + 1}</span></div>`)
+            }
+            document.querySelector(".board").children[0].remove()
+        </script>
+    </div>
+    <div class="mute">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
