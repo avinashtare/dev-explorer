@@ -1,0 +1,361 @@
+@font-face {
+  font-family: myFont;
+  src: url("./Fonts/Product\ Sans\ Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: myFont;
+}
+
+*::selection {
+  background-color: #da3518;
+  color: #333;
+}
+body {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 15%;
+  z-index: 80;
+  backdrop-filter: blur(10px);
+}
+
+nav .logo {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+nav ul {
+  display: flex;
+}
+
+ul li {
+  margin: 10px 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+nav i {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.c-scrollbar {
+  z-index: 90;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(245, 108, 29),
+    rgba(244, 77, 17, 0.984)
+  );
+}
+#main::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(https://png.pngtree.com/png-clipart/20220823/original/pngtree-black-and-white-minimalist-line-grid-png-image_8473376.png);
+  background-size: 20%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#main .page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* <------------- page-1 ------------->*/
+
+#main .page-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main .page-1 #fanta {
+  position: absolute;
+  width: 40%;
+  z-index: 2;
+}
+
+#main .page-1 .orangeBar {
+  top: 10%;
+  left: 32%;
+  position: absolute;
+  width: 18%;
+  z-index: 1;
+}
+
+#main .page-1 .ornage {
+  top: 60%;
+  left: 48%;
+  position: absolute;
+  width: 18%;
+  z-index: 3;
+}
+
+#main .page-1 .leaf-1,
+.leaf-2 {
+  position: absolute;
+  z-index: 4;
+  width: 20%;
+  transition: all 0.1s ease;
+}
+
+#main .page-1 .leaf-1 {
+  top: 22%;
+  left: 2%;
+  width: 18%;
+  rotate: 45deg;
+}
+
+#main .page-1 .leaf-2 {
+  width: 20%;
+  right: 0;
+  top: 8%;
+}
+
+#main .page-1 span {
+  font-size: 25vw;
+  color: #fff;
+  position: absolute;
+  color: transparent;
+  -webkit-text-stroke-width: 1vw; /* Set stroke width */
+  -webkit-text-stroke-color: white; /* Set stroke color to transparent */
+  background: linear-gradient(180deg, rgba(254, 28, 28, 0.741), orange);
+  -webkit-background-clip: text; /* Use background as text fill */
+}
+
+/* <------------- page-2 ------------->*/
+
+#main .page-2 {
+  background-color: red;
+  background: linear-gradient(
+    180deg,
+    rgb(245, 108, 29),
+    rgba(244, 77, 17, 0.984)
+  );
+  display: flex;
+  flex-direction: row;
+}
+
+#main .page-2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(https://png.pngtree.com/png-clipart/20220823/original/pngtree-black-and-white-minimalist-line-grid-png-image_8473376.png);
+  background-size: 20%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#main .page-2 .left {
+  width: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+#main .page-2 .left svg {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  width: 35%;
+}
+
+#main .page-2 .left svg path {
+  fill: rgb(182, 44, 2);
+}
+
+#main .page-2 .right {
+  position: relative;
+  width: 50%;
+  bottom: 2%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main .page-2 .right h1 {
+  color: #fff;
+  font-size: 5vw;
+  gap: 0.1vw;
+  margin: 4% 0;
+}
+#main .page-2 .right h1::selection,
+span::selection {
+  background-color: #da3518;
+  color: #333;
+}
+
+#main .page-2 .right span {
+  color: #fff;
+  font-size: 1vw;
+  width: 80%;
+}
+
+/* <------------- page-3 ------------->*/
+
+#main .page-3 {
+  background: linear-gradient(
+    180deg,
+    rgb(255, 136, 68),
+    rgba(244, 77, 17, 0.984)
+  );
+  display: flex;
+  justify-content: center;
+}
+
+#main .page-3::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url(https://png.pngtree.com/png-clipart/20220823/original/pngtree-black-and-white-minimalist-line-grid-png-image_8473376.png);
+  background-size: 20%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+
+#main .page-3 .cards {
+  position: relative;
+  top: 12%;
+  display: flex;
+  padding: 8% 0;
+  width: 70%;
+  height: 100%;
+}
+
+#main .page-3 .cards .card {
+  position: relative;
+  width: calc(100% / 3);
+  height: 100%;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+#main .page-3 .cards .card .info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main .page-3 .cards .card .info h1 {
+  font-family: myFont;
+  font-size: 3vw;
+  letter-spacing: 4px;
+}
+
+#main .page-3 .cards .card .info button {
+  font-family: myFont;
+  font-size: 1.1vw;
+  width: 70%;
+  padding: 8px 16px;
+  outline: none;
+  border-radius: 20px;
+  border: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 20%;
+  margin-top: 10%;
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#main .page-3 .cards .card .info button:hover {
+  width: 80%;
+}
+
+#main .page-3 .cards .card:nth-child(1) {
+  background-color: #d6002c;
+}
+
+#main .page-3 .cards .card:nth-child(2) {
+  background-color: #e2511f;
+}
+
+#main .page-3 .cards .card:nth-child(3) {
+  background-color: #25659f;
+}
+
+#main .page-3 .cards .card:nth-child(1) .info button {
+  color: #d6002c;
+}
+
+#main .page-3 .cards .card:nth-child(2) .info button {
+  color: #e2511f;
+}
+
+#main .page-3 .cards .card:nth-child(3) .info button {
+  color: #25659f;
+}
+
+#main .page-3 .cards .card img {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 65%;
+}
+
+#main .page-3 .cards .card:nth-child(1) img:nth-child(1) {
+  color: #25659f;
+}
+
+#main .page-3 .cards .card:nth-child(2) img:nth-child(1) {
+  top: -15%;
+  width: 151%;
+  display: none;
+}
+
+#main .page-3 .cards .card:nth-child(3) img:nth-child(1) {
+  width: 92%;
+}
+
+.footer {
+  background-color: #ff7739;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
