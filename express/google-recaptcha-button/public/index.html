@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- recaptcha cdn  -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <div class="nav-container">
+        <h1>Recaptcha Form</h1>
+        <button id="dark-mode-toggle">
+          <i class="fas fa-moon" id="dark-mode-icon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- main. -->
+    <div class="container">
+      <!-- form -->
+      <form id="myForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+
+          <!-- recaptcha button -->
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LdbhDMqAAAAAJxZvbiBMAEGJbcHEIPJ92SwhsYv"
+            data-theme="dark"
+            data-callback="RecaptchaToken"
+            data-expired-callback="RecaptchaExpired"
+          ></div>
+          <br />
+
+          <!-- submit  -->
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
