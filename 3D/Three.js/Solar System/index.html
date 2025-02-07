@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css  -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Solar System</title>
+  </head>
+  <body>
+    <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
+    <canvas id="canvas"></canvas>
+    <!-- js  -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+        }
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.js"
+      integrity="sha512-Mcz+Mt8k23j06ycA5EJGfyXbtzB6xqEoJxjGftQQoed/zQzem9Lt21LRymjlcm+NUsbF0LOHgfdN8LO8GtKDOw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
