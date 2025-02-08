@@ -76,7 +76,6 @@ let earthTexture = new THREE.MeshStandardMaterial({ map: textureLoader.load('./i
 let earth = new THREE.Mesh(earthGeometry, earthTexture)
 earth.position.set(14, 0.9, 0)
 
-
 const earthOrbit = new THREE.Object3D()
 earthOrbit.position.set(sun.position.x, sun.position.y, sun.position.z)
 earthOrbit.rotateY(Math.random() * 200 * Math.random() * 500)
@@ -206,3 +205,29 @@ function animate() {
     renderer.render(scene, camera);
 }
 animate();
+
+
+
+// when any point of object is hover
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+window.addEventListener('mousemove', (event) => {
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(scene.children);
+    if (intersects.length > 0) {
+        console.log('Hovered Object:', intersects[0].object);
+    }
+});
+
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    // Update camera aspect ratio and renderer size
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
