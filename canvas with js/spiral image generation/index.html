@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Spiral</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <div class="controls">
+      <label for="inputSize">Size</label>
+      <input
+        type="range"
+        min="1.0"
+        max="5.0"
+        step="0.1"
+        value="2"
+        id="inputSize"
+      />
+
+      <label class="checkbox-label">
+        <input type="checkbox" id="inputRGB" />
+        RGB Mode
+      </label>
+
+      <!-- **New Color Pickers** -->
+      <label for="inputColor1">Color 1</label>
+      <input type="color" id="inputColor1" value="#000000" />
+
+      <label for="inputColor2">Color 2</label>
+      <input type="color" id="inputColor2" value="#ffffff" />
+
+      <label for="inputFile" class="file-label">Upload Image</label>
+      <input type="file" id="inputFile" accept="image/*" />
+
+      <button id="inputDownload">Download Image</button>
+    </div>
+
+    <!-- JS -->
+    <script src="./imageLoader.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
