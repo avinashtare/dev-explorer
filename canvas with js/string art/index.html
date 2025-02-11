@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>String Art Generator</title>
+  </head>
+  <body>
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="loading-modal">
+      <div class="loading-content">
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>String Art Generator</h1>
+      <canvas id="canvas"></canvas>
+      <div class="controls">
+        <input
+          type="range"
+          min="50"
+          max="150"
+          step="1"
+          id="inputMaxPoint"
+          value="100"
+        />
+        <input type="color" id="inputBackground" value="#ffffff" />
+        <label for="showRGB" style="color: white">RGB</label>
+        <input type="checkbox" id="showRGB" />
+        <input type="file" id="inputFile" />
+        <input type="button" value="Download" id="downloadImage" />
+      </div>
+    </div>
+
+    <script src="imageLoader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
